@@ -20,7 +20,7 @@ class ProductWithCategoryAndCiteSeeder extends Seeder
         $cities = City::factory(30)->create();
         $categories = Category::factory(100)->create();
 
-        $products = Product::factory(100)->create();
+        $products = Product::factory(50000)->create();
 
 
         $products->each(function ($product) use ($cities, $categories) {
